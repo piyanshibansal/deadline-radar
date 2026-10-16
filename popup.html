@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadline Radar</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>Deadline Radar</h1>
+    <p>Your deadlines, under control.</p>
+
+    <section id="detection-section" hidden>
+        <h2>Detected Deadline</h2>
+
+        <p id="selected-text"></p>
+
+        <label for="detected-title">Deadline title</label>
+        <input
+            type="text"
+            id="detected-title"
+            placeholder="Detected title"
+        >
+
+        <label for="detected-date">Due date</label>
+        <input type="date" id="detected-date">
+
+        <button type="button" id="save-detected-button">
+            Save Detected Deadline
+        </button>
+
+        <button type="button" id="dismiss-detection-button">
+            Dismiss
+        </button>
+    </section>
+
+    <form id="deadline-form">
+        <label for="title">Deadline title</label>
+        <input
+            type="text"
+            id="title"
+            placeholder="e.g. Digital Electronics assignment"
+            required
+        >
+
+        <label for="date">Due date</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Add Deadline</button>
+    </form>
+
+    <p id="message"></p>
+
+    <div id="deadline-list"></div>
+
+    <button id="export-button" type="button">
+        Export to Calendar (.ics)
+    </button>
+
+    <script src="deadline-utils.js"></script>
+    <script src="deadline-detector.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

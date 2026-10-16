@@ -1,0 +1,21 @@
+
+{
+  "name": "deadline-radar",
+  "version": "1.0.0",
+  "description": "A Chrome extension to track academic deadlines and reminders",
+  "main": "popup.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "keywords": [
+    "chrome-extension",
+    "deadline-tracker",
+    "productivity"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "vitest": "^4.0.0"
+  }
+}

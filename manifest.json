@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Deadline Radar",
+  "version": "1.0.0",
+  "description": "Your personal academic deadline tracker with smart webpage deadline detection.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
