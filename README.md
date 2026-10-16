@@ -30,7 +30,7 @@ Deadline Radar is a Chrome extension that helps students manage academic deadlin
 1. Clone this repository:
 
    ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
+   git clone https://github.com/piyanshibansal/deadline-radar.git
    ```
 
 2. Open the project folder in VS Code or another editor.
